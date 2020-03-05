@@ -1,0 +1,33 @@
+<h1>Enrollments index</h1>
+<%= link_to 'add Enrollment', new_course_enrollment_path(@course) %>
+<h1>Teachers:</h1>
+<ul>
+  <% @teachers.each do |teacher| %>
+    <li>
+      <%= teacher.user.full_name %>
+    </li>
+  <% end %>
+</ul>
+<h1>Tas:</h1>
+<ul>
+  <% @tas.each do |ta| %>
+    <li>
+      <%= ta.user.full_name %>
+    </li>
+  <% end %>
+</ul>
+<h1>Students:</h1>
+<ul>
+  <% @students.each do |student| %>
+    <li>
+      <%= student.user.full_name %>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
+
+
+
